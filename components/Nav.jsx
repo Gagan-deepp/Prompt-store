@@ -19,6 +19,7 @@ const Nav = () => {
   }, [])
   return (
     <nav>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <Link className='logo' href='/' >
         <Image src="/logo.jpg" height={30} width={100} />
         <p> Next</p>
@@ -42,8 +43,8 @@ const Nav = () => {
           {provider &&
             Object.values(provider).map((provider) => (
               <motion.button
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 type='button'
                 key={provider.name}
                 onClick={() => {
